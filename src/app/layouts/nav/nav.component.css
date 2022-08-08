@@ -1,0 +1,10 @@
+@media (min-width: 992px) {
+  .navbar-nav {
+    flex-direction: column;
+  }
+}
+
+.nav-link i {
+  opacity: .5;
+}
+

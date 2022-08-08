@@ -1,27 +1,37 @@
-# AppAngular
+## 📁 Resumo do projeto
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
+Esse projeto foi desenvolvido especificamente para TexoIt, com intuito de uma seletiva de trabalho.
 
-## Development server
+## 🔨 Funcionalidades do projeto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+O projeto consiste em mostrar duas views com informações sobre filmes.
+- `View 1:` Dashboard, 4 tabelas com filtros conforme solicitado pelo documento do teste.
+- `View 2:` Films, trás todos os filmes disponiveis na api.
+A Api utilizada é de autoria da própria empresa.
 
-## Code scaffolding
+## ✔️ Técnicas e tecnologias utilizadas
+- `Bootstrap`
+- `FontAesome`
+- `GoogleFonts`
+- `Node v14`
+- `Angular 13.3.3`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 📁 AppAngularTest
 
-## Build
+Este projeto foi gerado com [Angular CLI] (https://github.com/angular/angular-cli) versão 13.3.3.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 🛠️ Abrir e rodar o projeto
 
-## Running unit tests
+Execute 'npm install' e para navegar, acesse `http://localhost:4200/`.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 📁 Novo component
 
-## Running end-to-end tests
+Execute 'ng generate component-name' para gerar um novo componente. Você também pode usar 'ng generate Directive | pipe | service | class | guard | interface | enum | module'.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## 🔨 Executando testes de unidade
 
-## Further help
+Execute 'ng test' para executar os testes de unidade via [Karma] (https://karma-runner.github.io).
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## 📚 Ajuda adicional
+
+Para obter mais ajuda sobre o Angular CLI, use 'ng help' ou confira a página [Visão geral e referência de comandos do Angular CLI] (https://angular.io/cli).

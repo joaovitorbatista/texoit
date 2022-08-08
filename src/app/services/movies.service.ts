@@ -29,7 +29,7 @@ export class MoviesService {
   }
 
   /* Pegar anos com mais vencedores */
-  getMultipleWinnersYear() {
+  getWinnersYear() {
     return this.http.get<Winneryears>(
       `${this.url}?projection=years-with-multiple-winners`
     );

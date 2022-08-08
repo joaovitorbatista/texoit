@@ -4,7 +4,7 @@
 }
 
 .main-container {
-  padding: 50px 15px 15px 50px;
+  padding: 50px 5px 50px 50px;
   margin-right: auto;
   margin-left: auto;
   overflow: hidden;
@@ -75,4 +75,64 @@
     border-radius: 0 40px;
     width: 100%;
     padding: 1.5rem;
+}
+
+.content {
+  flex: 1 0 auto;
+  flex-direction: row !important;
+  display: flex;
+}
+
+nav {
+  width: 265px;
+  transition: width 0.3s ease;
+  justify-content: flex-start;
+  display: flex;
+  align-items: flex-start !important;
+}
+
+nav img {
+    padding: 10px;
+}
+
+nav.nav-left {
+  border-top: 1px dashed #70619d;
+}
+
+nav.nav-left li.nav-item {
+  padding: 10px;
+}
+
+main {
+  padding-top: calc(65px + var(--kt-toolbar-height));
+  transition: padding-left 0.3s ease;
+  width: 100%;
+}
+
+pagination-template nav {
+  width: 100%;
+}
+
+.ngx-pagination .current {
+  background: var(--gra-color) !important;
+}
+
+@media (max-width: 992px) {
+  .content {
+    display: contents;
+  }
+  nav {
+    width: 100%;
+    padding: 10px 10px 0 10px !important;
+
+  }
+  .nav {
+    justify-content: space-evenly !important;
+  }
+  .main-container {
+    padding: 20px 5px 10px 5px;
+  }
+  button.navbar-toggler {
+    margin: 12px;
+  }
 }

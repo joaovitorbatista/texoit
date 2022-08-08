@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { filter } from 'rxjs';
 import { Studios } from 'src/app/model/studios';
 import { MoviesService } from 'src/app/services/movies.service';
 
