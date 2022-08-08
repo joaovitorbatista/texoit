@@ -1,0 +1,38 @@
+<h4>Maximum</h4>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Producer</th>
+      <th scope="col">Interval</th>
+      <th scope="col">Previous Year</th>
+      <th scope="col">Following Year</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let producer of interval!.max  | slice:0:1;">
+      <td>{{producer.producer}}</td>
+      <td>{{producer.interval}}</td>
+      <td>{{producer.previousWin}}</td>
+      <td>{{producer.followingWin}}</td>
+    </tr>
+  </tbody>
+</table>
+<h4 style="margin-top: 1vh;">Minimum</h4>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Producer</th>
+      <th scope="col">Interval</th>
+      <th scope="col">Previous Year</th>
+      <th scope="col">Following Year</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let producer of interval!.min  | slice:0:1;">
+      <td>{{producer.producer}}</td>
+      <td>{{producer.interval}}</td>
+      <td>{{producer.previousWin}}</td>
+      <td>{{producer.followingWin}}</td>
+    </tr>
+  </tbody>
+</table>

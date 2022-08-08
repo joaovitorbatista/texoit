@@ -1,1 +1,51 @@
-<p>filmes works!</p>
+<main class="main-container">
+    <div class="container h-100">
+        <div class="row">
+            <div class="col-xs-12 col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">
+                                        Year
+                                        <div class="col-md-12">
+                                          <input (change)="tablepage = 1; this.moviedata.pageable.pageNumber = 0; filterTable();" class="form-control" placeholder="Filter by year" type="number" [(ngModel)]="yearfilter">
+                                        </div>
+                                    </th>
+                                    <th scope="col">Title</th>
+                                    <th scope="col">
+                                        Winner?
+                                        <div class="col-md-12">
+                                          <select (change)="tablepage = 1; this.moviedata.pageable.pageNumber = 0; filterTable()" class="form-control" placeholder="Winner?" [(ngModel)]="winner">
+                                                <option value="-1">Yes/No</option>
+                                                <option value="1">Yes</option>
+                                                <option value="0">No</option>
+                                            </select>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr
+                                    *ngFor="let movie of moviedata.content | paginate: { itemsPerPage: this.moviedata.pageable.pageSize , currentPage: tablepage, totalItems:  this.moviedata.totalElements}">
+                                    <td>{{movie.id}}</td>
+                                    <td>{{movie.year}}</td>
+                                    <td>{{movie.title}}</td>
+                                    <td>{{movie.winner? "Yes" : "No"}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="border">
+                            <pagination-controls [responsive]="true" previousLabel="" nextLabel="" class="my-pagination"
+                                (pageChange)="tablepage = $event; this.moviedata.pageable.pageNumber = $event -1; filterTable();"
+                                [maxSize]="7">
+                            </pagination-controls>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

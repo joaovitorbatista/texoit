@@ -6,9 +6,9 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">2022</th>
-      <td>2</td>
+    <tr *ngFor="let year of winnerYears!.years">
+      <td>{{year.year}}</td>
+      <td>{{year.winnerCount}}
     </tr>
   </tbody>
 </table>

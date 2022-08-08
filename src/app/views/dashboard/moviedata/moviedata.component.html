@@ -1,0 +1,27 @@
+<div class="row">
+  <div class="col-xs-10 col-10">
+    <input class="form-control" placeholder="Search by year" type="number" [(ngModel)]="yearfilter"
+      (keydown.enter)="searchByYear()">
+  </div>
+  <div class="col-xs-2 col-2">
+    <button (click)="searchByYear()" type="button" class="btn btn-gra">
+      <i class="material-icons">search</i>
+    </button>
+  </div>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Year</th>
+      <th scope="col">Title</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let winner of byyear">
+      <td>{{winner.id}}</td>
+      <td>{{winner.year}}</td>
+      <td>{{winner.title}}</td>
+    </tr>
+  </tbody>
+</table>

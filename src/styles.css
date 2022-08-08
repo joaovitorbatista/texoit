@@ -1,4 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --gra-color: #5c4c8c;
+}
+
 .main-container {
   padding: 50px 15px 15px 50px;
   margin-right: auto;
@@ -6,8 +10,8 @@
   overflow: hidden;
 }
 
-.space-100{
-  padding: 50px 0;
+.space-10{
+  padding: 15px 0;
   display: block;
   height: 1px;
 }
@@ -18,7 +22,7 @@
 }
 
 .bg-win {
-  background-color: #b32019 !important;
+  background-color: var(--gra-color) !important;
 }
 
 .bg-win a, .bg-win a.active  {
@@ -30,10 +34,45 @@
 }
 
 .navbar-expand-lg .navbar-nav .dropdown-menu {
-  background: #b32019;
+  background: var(--gra-color);
 }
 
 .dropdown-item:hover {
-  color: #b32019 !important;
+  color: var(--gra-color) !important;
   background-color: #ffeecd !important;
+}
+
+.card-body h2 {
+  color: var(--gra-color) !important;
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: 'Quattrocento', serif;
+
+}
+
+.card-body h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: 'Quattrocento', serif;
+
+}
+
+.btn-gra {
+  color: #fff;
+  background-color: var(--gra-color);
+  border:1px solid var(--gra-color);
+}
+
+.btn-gra:hover {
+  color: var(--gra-color);
+  background-color: transparent;
+  border:1px solid var(--gra-color);
+}
+
+
+.card {
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    border-radius: 0 40px;
+    width: 100%;
+    padding: 1.5rem;
 }

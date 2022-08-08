@@ -6,9 +6,9 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">João Vitor</th>
-      <td>2</td>
+    <tr *ngFor="let studio of studios!.studios  | slice:0:3;">
+      <td>{{studio.name}}</td>
+      <td>{{studio.winCount}}
     </tr>
   </tbody>
 </table>
